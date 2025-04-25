@@ -1,0 +1,22 @@
+.description {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--gap16)var(--gap8);
+  border: 1px solid var(--gray4);
+  border-radius: var(--gap8);
+  border-right: 4px solid var(--main-green);
+  background-color: white;
+
+}
+
+.description p {
+  font-size: var(--fs16);
+  font-weight: 700;
+}
+
+.description div {
+  font-size: var(--fs16);
+}

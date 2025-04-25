@@ -1,0 +1,8 @@
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  font-size: var(--fs32);
+  font-weight: 700;
+}

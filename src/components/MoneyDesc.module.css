@@ -1,0 +1,22 @@
+.moneyDesc {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  border-radius: var(--gap8);
+  font-size: var(--fs24);
+  font-weight: 700;
+}
+
+.moneyDesc h2 {
+  margin-bottom: var(--gap12);
+}
+
+.descList {
+  margin-top: var(--gap16);
+  overflow: scroll;
+  height: 245px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap8);
+}
+

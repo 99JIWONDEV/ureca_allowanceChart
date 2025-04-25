@@ -1,0 +1,18 @@
+.totalMoney {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--gray3);
+  width: 45%;
+  border-radius: var(--gap8);
+  font-size: var(--fs24);
+  font-weight: 700;
+  padding: var(--gap32) 0;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .totalMoney {
+    width: 100%;
+  }
+}

@@ -1,0 +1,96 @@
+.moneyInput {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  border-radius: var(--gap8);
+  font-size: var(--fs24);
+  font-weight: 700;
+  gap: var(--gap16);
+}
+
+.expenseTitle {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap12);
+  width: 100%;
+  margin-top: var(--gap12);
+}
+
+.expenseTitle p {
+  font-size: var(--fs20);
+}
+
+.expenseTitle input {
+  width: 100%;
+  font-size: var(--fs16);
+  padding: var(--gap8);
+  border-radius: var(--gap8);
+  border: 1px solid var(--gray4);
+}
+
+.expenseType {
+  display: flex;
+  gap: var(--gap16);
+  font-size: var(--fs16);
+}
+
+.typeSelect {
+  display: flex;
+  gap: var(--gap8);
+}
+
+
+.typeSelect label {
+  cursor: pointer;
+}
+
+.moneyInputField {
+  width: 100%;
+  font-size: var(--fs16);
+  padding: var(--gap8);
+  border-radius: var(--gap8);
+  border: 1px solid var(--gray4);
+}
+
+input:focus {outline: none;}
+
+input[type='radio'] {
+  flex-shrink: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 13px;
+  height: 13px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+/* 체크 시 버튼 모양 스타일*/
+input[type='radio']:checked {
+  background-color: var(--main-color);
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 1px #111;
+}
+
+button {
+  margin-top: var(--gap16);
+  padding: var(--gap12) 0;
+  color: #fff;
+  background-color: var(--sub-color3);
+  border: none;
+  border-radius: var(--gap8);
+  font-size: var(--fs16);
+  cursor: pointer;
+
+}
+
+button:hover {
+  background-color: var(--sub-color4);
+}
+
+button:active {
+  background-color: var(--main-color);
+  transform: scale(0.99);
+  transition: transform 0.1s;
+}
