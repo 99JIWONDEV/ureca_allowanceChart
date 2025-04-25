@@ -1,8 +1,7 @@
 main {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
-  gap: var(--gap64);
+  gap: var(--gap32);
 }
 
 .sub-header {
@@ -18,8 +17,20 @@ main {
 }
 
 @media (max-width: 768px) {
+  main {
+    width: 100%;
+  }
   .sub-header {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    gap: var(--gap16);
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: var(--gap32);
   }
 }

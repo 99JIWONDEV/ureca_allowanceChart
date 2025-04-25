@@ -26,17 +26,28 @@
   gap: var(--gap8);
   padding: var(--gap8) 0;
   padding-right: var(--gap8);
+  border-radius: var(--gap12);
 }
 
-.descList::-webkit-scrollbar{
+.descList::-webkit-scrollbar {
   width: 4px;
 }
-/* 스크롤바 막대 설정*/
-.descList::-webkit-scrollbar-thumb{
+
+.descList::-webkit-scrollbar-thumb {
   background-color: var(--gray3);
   border-radius: var(--gap12);
 }
-/* 스크롤바 뒷 배경 설정*/
-.descList::-webkit-scrollbar-track{
+
+.descList::-webkit-scrollbar-track {
   background-color: var(--gray1);
+}
+
+@media (max-width: 768px) {
+  .moneyDesc {
+    width: 100%;
+  }
+  .descList{
+    padding-right: var(--gap8);
+  }
+
 }

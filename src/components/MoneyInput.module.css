@@ -101,3 +101,9 @@ input[type='radio']:checked {
   transform: scale(0.99);
   transition: transform 0.1s;
 }
+
+@media (max-width: 768px) {
+  .moneyInput {
+    width: 100%;
+  }
+}
