@@ -1,0 +1,55 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modalContent {
+  margin-top: var(--gap128);
+  background-color: white;
+  padding: var(--gap16) var(--gap32);
+  border-radius: var(--gap12);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  height: 170px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap16);
+}
+
+.modalContent div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.modalContent button {
+  width: 45%;
+  font-size: var(--fs16);
+  padding: var(--gap8) var(--gap16);
+  border: none;
+  font-weight: bold;
+  border-radius: var(--gap8);
+  cursor: pointer;
+}
+
+.modalContent button:first-child {
+  background-color: var(--main-red);
+  color: white;
+}
+
+.modalContent button:last-child {
+  background-color: var(--gray3);
+  color: black;
+}
+
+.modalContent p {
+  font-size: var(--fs16);
+  color: var(--gray6);
+}

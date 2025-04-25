@@ -9,25 +9,9 @@
   border-radius: var(--gap8);
   background-color: white;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
-  position: relative; 
-  cursor: pointer;
 }
 
-.deleteBtn {
-  position: absolute;
-  left: -32px; 
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: var(--main-red);
-  color: white;
-  border: none;
-  border-radius: 4px;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 4px 8px;
-  font-size: 14px;
 
-}
 
 .description p {
   font-size: var(--fs16);
@@ -36,4 +20,11 @@
 
 .description div {
   font-size: var(--fs16);
+}
+
+.description i {
+  font-size: var(--fs16);
+  color: var(--gray6);
+  margin-left: var(--gap8);
+  cursor: pointer;
 }

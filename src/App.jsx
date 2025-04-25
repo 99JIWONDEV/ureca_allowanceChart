@@ -26,7 +26,7 @@ function App() {
       </div>
       <div className="content">
         <MoneyInput setToggle={setToggle} />
-        <MoneyDesc data={data} />
+        <MoneyDesc data={data} setToggle={setToggle} />
       </div>
     </main>
   )

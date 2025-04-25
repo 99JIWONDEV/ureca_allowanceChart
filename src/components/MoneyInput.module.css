@@ -11,7 +11,7 @@
 .error {
   color: red;
   font-size: var(--fs12) !important;
-  margin-top: -4px; 
+  margin-top: -4px;
   margin-left: 4px;
 }
 
@@ -46,7 +46,6 @@
   gap: var(--gap8);
 }
 
-
 .typeSelect label {
   cursor: pointer;
 }
@@ -59,7 +58,9 @@
   border: 1px solid var(--gray4);
 }
 
-input:focus {outline: none;}
+input:focus {
+  outline: none;
+}
 
 input[type='radio'] {
   flex-shrink: 0;
@@ -80,7 +81,7 @@ input[type='radio']:checked {
   box-shadow: 0 0 0 1px #111;
 }
 
-button {
+.moneyInput button {
   margin-top: var(--gap16);
   padding: var(--gap12) 0;
   color: #fff;
@@ -89,14 +90,13 @@ button {
   border-radius: var(--gap8);
   font-size: var(--fs16);
   cursor: pointer;
-
 }
 
-button:hover {
+.moneyInput button:hover {
   background-color: var(--sub-color4);
 }
 
-button:active {
+.moneyInput button:active {
   background-color: var(--main-color);
   transform: scale(0.99);
   transition: transform 0.1s;
