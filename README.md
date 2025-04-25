@@ -1,12 +1,8 @@
-# React + Vite
+# 지원's 용돈 기입장
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+유레카 SW 과정 중 제작한 용돈 기입장입니다. 
 
-Currently, two official plugins are available:
+Reat.js를 이용했습니다. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 작동 이미지 
+<img width="1428" alt="Image" src="https://github.com/user-attachments/assets/0f9344aa-4287-4c7a-a19c-798403a87468" />
