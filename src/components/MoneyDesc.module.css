@@ -12,11 +12,10 @@
 }
 
 .descList {
-  margin-top: var(--gap16);
-  overflow: scroll;
-  height: 245px;
+  margin-top: var(--fs16);
+  overflow-y: scroll;
+  height: 225px;
   display: flex;
   flex-direction: column;
   gap: var(--gap8);
 }
-

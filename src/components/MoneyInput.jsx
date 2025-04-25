@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import css from './MoneyInput.module.css'
 
-const MoneyInput = () => {
+const MoneyInput = ({ setToggle }) => {
   const [description, setDescription] = useState('')
   const [type, setType] = useState('')
   const [amount, setAmount] = useState('')
@@ -9,7 +9,7 @@ const MoneyInput = () => {
   const [isType, setIsType] = useState(false)
   const [isAmount, setIsAmount] = useState(false)
 
-  const handleAddData = () => {
+  const handleAddTransactions = () => {
     if (!description) {
       setIsDesc(true)
       return
@@ -29,10 +29,10 @@ const MoneyInput = () => {
       setIsAmount(false)
     }
 
-    const existing = JSON.parse(localStorage.getItem('data')) || []
+    const existing = JSON.parse(localStorage.getItem('transactions')) || []
     const newId = existing.length > 0 ? Math.max(...existing.map(t => t.id)) + 1 : 1
 
-    const data = {
+    const transactions = {
       id: newId,
       description,
       amount: parseInt(amount, 10),
@@ -40,8 +40,10 @@ const MoneyInput = () => {
       date: new Date().toISOString().split('T')[0],
     }
 
-    const updated = [...existing, data]
-    localStorage.setItem('data', JSON.stringify(updated))
+    const updated = [...existing, transactions]
+    localStorage.setItem('transactions', JSON.stringify(updated))
+
+    setToggle(prev => !prev)
 
     setDescription('')
     setType('')
@@ -100,7 +102,7 @@ const MoneyInput = () => {
         required
       />
       {isAmount && <p className={css.error}>금액을 입력하세요</p>}
-      <button onClick={handleAddData}>추가하기</button>
+      <button onClick={handleAddTransactions}>추가하기</button>
     </div>
   )
 }

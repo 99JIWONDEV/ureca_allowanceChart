@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import css from './Description.module.css'
 
-const Description = () => {
+const Description = ({ description, type, amount }) => {
+  const [isActive, setIsActive] = useState(false)
+  const borderColor = type === 'income' ? 'var(--main-green)' : 'var(--main-red)'
   return (
-    <div className={css.description}>
-      <p>4월 용돈</p>
+    <div
+      className={css.description}
+      style={{ borderRight: `4px solid ${borderColor}` }}
+      onClick={() => setIsActive(prev => !prev)}
+    >
+      {/* X 버튼 */}
+      {isActive && <button className={css.deleteBtn}>X</button>}
+      <p>{description}</p>
       <div>
-        <span>+</span>
-        <span>₩</span>
-        <span>100,000</span>
+        <span>{type === 'income' ? '+' : '-'}</span>
+        <span> ₩</span>
+        <span>{amount.toLocaleString()}</span>
       </div>
     </div>
   )
