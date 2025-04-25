@@ -32,7 +32,6 @@ const Description = ({ id, description, type, amount, setToggle }) => {
           ></i>
         </div>
       </div>
-
       {showModal && <DeleteModal onClose={() => setShowModal(false)} onDelete={handleDelete} />}
     </>
   )
