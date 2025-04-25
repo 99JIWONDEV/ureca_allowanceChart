@@ -8,6 +8,13 @@
   gap: var(--gap16);
 }
 
+.error {
+  color: red;
+  font-size: var(--fs12) !important;
+  margin-top: -4px; 
+  margin-left: 4px;
+}
+
 .expenseTitle {
   display: flex;
   flex-direction: column;
